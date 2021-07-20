@@ -10,4 +10,3 @@ Write-Host "Shrinking WSL2 disk..."
 optimize-vhd -Path $vhdPath -Mode full
 Write-Host "WSL2 disk size before shrinking:" ((Get-Item $vhdPath).length/1GB) "GB"
 
-wsl --startup
